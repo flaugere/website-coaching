@@ -1,0 +1,51 @@
+{
+  "name": "flaugere_website_coach",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Site web David FLAUGERE Coach Sportif",
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "lint": "eslint . --ext .js,.ts,.astro",
+    "format": "prettier --write ."
+  },
+  "author": "@flaugere",
+  "license": "MIT",
+  "homepage": "https://github.com/flaugere/website-coaching",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaugere/website-coaching.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flaugere/website-coaching/issues"
+  },
+  "keywords": [
+    "astro",
+    "blog",
+    "theme",
+    "minimal",
+    "typography"
+  ],
+  "dependencies": {
+    "@astrojs/rss": "^4.0.12",
+    "@fontsource/jetbrains-mono": "^5.0.0",
+    "@fontsource/oswald": "^5.2.6",
+    "@fontsource/roboto-condensed": "^5.2.6",
+    "@fontsource/work-sans": "^5.2.6",
+    "astro": "^5.9.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-astro": "^1.2.0",
+    "playwright": "^1.49.0",
+    "prettier": "^3.3.0",
+    "prettier-plugin-astro": "^0.14.0",
+    "typescript": "^5.6.0"
+  }
+}

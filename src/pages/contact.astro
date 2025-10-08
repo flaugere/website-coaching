@@ -1,0 +1,145 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title="Contact | David FLAUGERE" description="Connect to discuss design philosophy, typography, or the aesthetic tension between Bauhaus modernism and monumental design.">
+  <div class="contact-page">
+    <header class="page-header">
+      <h1 class="page-title">Contact</h1>
+      <p class="page-description">
+        Pour échanger avec moi sur ton projet en visio, téléphone, email.
+      </p>
+      <hr class="page-rule" />
+    </header>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2>C'est parti ! Discutons de ton projet</h2>
+        <p>
+          Coaching musculation, renforcement musculaire en présentiel, à domicile, dans ton home gym, ... Parlons-en, je suis là pour t'accompagner 🙂
+        </p>
+        
+        <div class="contact-links">
+          <a href="mailto:contact@flaugere.fr" class="contact-link">
+            <span class="contact-label">Email</span>
+            contact@flaugere.fr
+          </a>
+          
+          <a href="https://www.instagram.com/david_flgr/" class="contact-link">
+            <span class="contact-label">Instagram</span>
+            @david_flgr
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="contact-content" id="zones">
+      <div class="contact-info">
+        <h2>Secteur géographique</h2>
+        <p>
+          Coaching à domicile, en présentiel, animation de small groupe : j'interviens dans toute la vallée de l'Hérault (Clermont l'Hérault, Gignac, Lodève, Pézenas).
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: calc(var(--grid-unit) * 8);
+  }
+
+  .page-title {
+    font-family: var(--font-heading-primary);
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: calc(var(--grid-unit) * 3);
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: calc(var(--grid-unit) * 4);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-rule {
+    height: 4px;
+    background-color: var(--color-accent);
+    border: none;
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .contact-content {
+    line-height: 1.7;
+  }
+
+  .contact-info h2 {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: calc(var(--grid-unit) * 3);
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 2);
+    margin-top: calc(var(--grid-unit) * 4);
+  }
+
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: calc(var(--grid-unit) * 2);
+    border: 2px solid var(--color-border);
+    transition: all 0.2s ease;
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    border-color: var(--color-accent);
+    background-color: var(--color-surface);
+  }
+
+  .contact-label {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: calc(var(--grid-unit) / 2);
+  }
+
+  .contact-link:hover .contact-label,
+  .contact-link:focus .contact-label {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+
+    .page-description {
+      font-size: 1.125rem;
+    }
+  }
+</style>
