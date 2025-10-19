@@ -37,7 +37,7 @@ const { title, description, showSidebar = true, image, type, publishedTime, cano
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
     <SEO
       title={title}
       description={description}
@@ -46,6 +46,20 @@ const { title, description, showSidebar = true, image, type, publishedTime, cano
       publishedTime={publishedTime}
       canonical={canonical}
     />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJEGSB30Z5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MJEGSB30Z5');
+    </script>
+    
+    <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/41f5b438929da.js" data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
+
+
   </head>
   <body>
     <div class="site-wrapper">
