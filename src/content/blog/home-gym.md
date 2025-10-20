@@ -2,7 +2,7 @@
 title: "Se renforcer sans salle de musculation"
 date: "2025-10-19"
 description: "Pourquoi j'adore mon home gym minimaliste"
-excerpt: Peut-on s'entrainer simplement chez soi ? En vacances ?"
+excerpt: Peut-on s'entrainer simplement chez soi ? En vacances ?
 categories: ["Entraînement", "Kettlebell"]
 tags: ["Entraînement", "Musculation", "Equipement"]
 ---

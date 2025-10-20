@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 }
 
 const { category, posts } = Astro.props;
-const base = "";
+const base = "/";
 ---
 
 <Layout title={`${category} - David FLAUGERE`} description={`All posts in the ${category} category`}>
@@ -69,7 +69,7 @@ const base = "";
           )}
           
           <a href={`${base}blog/${post.file.split('/').pop()?.replace('.md', '')}`} class="read-more">
-            Read More →
+            Lire la suite →
           </a>
         </article>
       ))}
