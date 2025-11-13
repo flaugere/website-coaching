@@ -201,3 +201,14 @@ hr {
   white-space: nowrap;
   border: 0;
 }
+
+/* Table */
+table {
+  border: 1px solid #AAA;
+}
+tr td {
+  padding: 0px 0px 10px 15px;
+}
+thead {
+  background-color: #DDD;
+}
