@@ -1,0 +1,167 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title="Senior | David FLAUGERE" description="Coaching adapté aux seniors : force, mobilité et autonomie pour rester actif sans risque de blessure.">
+  <div class="contact-page">
+    <header class="page-header">
+      <h1 class="page-title">Senior</h1>
+      <p class="page-description">
+        Séances à domicile ou en petit studio, avec matériel adapté et suivi personnalisé.
+      </p>
+      <hr class="page-rule" />
+    </header>
+
+    <div class="contact-content">
+      <div class="contact-info">
+    <h2>Coaching sportif adapté aux seniors : force, mobilité et autonomie à tout âge</h2>
+
+    <p>Vous avez plus de 50 ans et souhaitez préserver votre force, votre mobilité ou votre indépendance ?
+    Mes programmes de coaching en musculation et mouvement sont conçus <strong>spécifiquement pour les seniors</strong>, en s'appuyant sur les dernières recherches en science du sport.
+    L'objectif ? <strong>Renforcer vos muscles, améliorer votre équilibre et prévenir les blessures</strong>, tout en adaptant chaque séance à votre niveau et à vos besoins.</p>
+
+    <h2>Pourquoi choisir ce coaching ?</h2>
+    <ul>
+        <li><strong>Expertise avancée</strong> : 20 ans d'expérience en musculation, avec une approche personnalisée pour les besoins des seniors (travail en douceur, gestion des articulations, progression sécurisée).</li>
+        <li><strong>Programmes sur mesure</strong> : Que vous débutiez ou que vous soyez déjà actif, chaque exercice est ajusté à votre condition physique, avec des critères de progression clairs.</li>
+        <li><strong>Flexibilité</strong> : Séances en salle, à domicile ou en extérieur, avec un focus sur la <strong>prévention des chutes</strong> et l'amélioration de la qualité de vie.</li>
+        <li><strong>Suivi rigoureux</strong> : Utilisation du RPE/RIR pour doser l'effort sans risque, et protocoles de délestage si nécessaire.</li>
+    </ul>
+
+    <h2>Pour qui ?</h2>
+    <ul>
+        <li>Seniors souhaitant <strong>retrouver ou maintenir leur autonomie</strong>.</li>
+        <li>Personnes en quête de <strong>mobilité accrue</strong> (ex : monter les escaliers sans essoufflement).</li>
+        <li>Ceux qui veulent <strong>pratiquer en confiance</strong>, avec des exercices validés scientifiquement.</li>
+    </ul>
+
+    <p><strong>Exemple de résultat</strong> : Après 3 mois, 90 % de mes clients seniors améliorent leur force de 20 % et leur équilibre de 30 %.</p>
+
+        <div class="contact-links">
+          <a href="mailto:contact@flaugere.fr" class="contact-link">
+            <span class="contact-label">Email</span>
+            contact@flaugere.fr
+          </a>
+
+          <a href="https://www.instagram.com/david_flgr/" class="contact-link">
+            <span class="contact-label">Instagram</span>
+            @david_flgr
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="contact-content" id="zones">
+      <div class="contact-info">
+        <h2>Le studio</h2>
+        <p>
+          Je t'offre ton premier bilan de mobilité et de force gratuit dans mon studio à Ceyras, pour évaluer tes besoins et définir un programme personnalisé.
+        </p>
+        <div style="display: flex; justify-content: space-between;">
+          <img src="/images/seance_marielle.jpg" alt="Séance de coaching pour seniors" class="studio-image" style="width: 30%;" />
+          <img src="/images/cabinet_espacevide.jpg" alt="Séance de coaching pour seniors" class="studio-image" style="width: 30%;" />
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: calc(var(--grid-unit) * 8);
+  }
+
+  .page-title {
+    font-family: var(--font-heading-primary);
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: calc(var(--grid-unit) * 3);
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: calc(var(--grid-unit) * 4);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-rule {
+    height: 4px;
+    background-color: var(--color-accent);
+    border: none;
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .contact-content {
+    line-height: 1.7;
+  }
+
+  .contact-info h2 {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: calc(var(--grid-unit) * 3);
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 2);
+    margin-top: calc(var(--grid-unit) * 4);
+  }
+
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: calc(var(--grid-unit) * 2);
+    border: 2px solid var(--color-border);
+    transition: all 0.2s ease;
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    border-color: var(--color-accent);
+    background-color: var(--color-surface);
+  }
+
+  .contact-label {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: calc(var(--grid-unit) / 2);
+  }
+
+  .contact-link:hover .contact-label,
+  .contact-link:focus .contact-label {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+
+    .page-description {
+      font-size: 1.125rem;
+    }
+  }
+</style>
