@@ -1,53 +1,243 @@
 ---
 import Layout from '../components/Layout.astro';
 ---
+<!-- Page améliorée pour le coaching trail avec un CTA renforcé -->
 
-<Layout title="Trail | David FLAUGERE" description="TrailTheLimit">
-  <div class="contact-page">
+<Layout title="Coaching Trail | David FLAUGERE" description="TrailTheLimit - Coaching personnalisé en renforcement musculaire et mental pour trail">
+  <div class="coaching-page">
+    <!-- Header -->
     <header class="page-header">
-      <h1 class="page-title">Trail</h1>
+      <h1 class="page-title">Coaching Trail</h1>
+      <div class="cta-button-container">
+        <a
+          class="cta-button primary"
+          href="https://tally.so/embed/445jOo"
+          target="_blank"
+        >
+          📝 Quel est ton profil ?
+        </a>
+      </div>
       <p class="page-description">
-        Pratiquant et coach renforcement trail, je t'accompagne dans ton renforcement physique et mental pour affronter les sentiers.
+        <strong>Pratiquant passionné et coach spécialisé en renforcement musculaire pour le trail,</strong>
+        je t'accompagne pour <strong>développer ta force, ton endurance et ta résilience mentale</strong> afin d'affronter les sentiers avec confiance et performance.
+        <strong>Que tu sois débutant·e ou traileur·euse confirmé·e, je t'aide à progresser en évitant les blessures et en optimisant tes performances.</strong>
       </p>
+      <div class="cta-button-container">
+        <a href="#contact-cta" class="cta-button primary">
+          <span>🚀 Commence ton aventure dès maintenant</span>
+        </a>
+      </div>
       <hr class="page-rule" />
     </header>
 
-    <div class="contact-content">
-      <div class="contact-info">
-        <h2>Découvre TrailTheLimit</h2>
-        <div class="contact-links">
-          <a href="https://trailthelimit.fr" class="contact-link">
-            <span class="contact-label">Site web</span>
-            https://trailthelimit.fr
-          </a>
-          
-          <a href="https://www.instagram.com/trailthelimit/" class="contact-link">
-            <span class="contact-label">Instagram</span>
-            @trailthelimit
-          </a>
-        </div>
-      </div>
-    </div>
+    <!-- Section : Pourquoi choisir un coaching trail ? -->
+    <section class="section">
+      <h2>Pourquoi choisir un coaching trail ?</h2>
+
+      <p>
+        Le trail, c'est bien plus qu'une simple course : c'est une <strong>aventure physique et mentale</strong>.
+        Mon approche combine :
+      </p>
+      <ul class="benefits-list">
+        <li>
+          <strong>Renforcement musculaire ciblé</strong> : Travail spécifique pour les jambes, le gainage et la stabilité, adapté aux contraintes du trail (dénivelé, descentes techniques, etc.).
+        </li>
+        <li>
+          <strong>Préparation mentale</strong> : Gestion du stress, de la fatigue et développement de la résilience pour affronter les défis en course.
+        </li>
+        <li>
+          <strong>Optimisation de la technique</strong> : Améliore ta foulée, ta gestion de l'effort et ton efficacité énergétique.
+        </li>
+        <li>
+          <strong>Prévention des blessures</strong> : Exercices et conseils pour renforcer tes articulations et éviter les blessures fréquentes en trail.
+        </li>
+        <li>
+          <strong>Planification personnalisée</strong> : Un programme adapté à ton niveau, tes objectifs (Ultra, course en montagne, etc.) et ton emploi du temps.
+        </li>
+      </ul>
+    </section>
+
     <hr />
-    <div class="contact-content" id="zones">
-      <div class="contact-info">
-        <h2>Secteur géographique</h2>
-        <p>
-          Coaching à domicile, en présentiel j'interviens dans toute la vallée de l'Hérault ! 
-          Clermont l'Hérault, Gignac, Lodève, Pézenas, Ceyras, Canet.
-        </p>
+
+    <!-- Section : Mes services -->
+    <section class="section" id="services">
+      <h2>Mes services</h2>
+
+      <div class="service-cards">
+        <!-- Carte : Coaching individuel -->
+        <div class="service-card">
+          <h3>🏔️ Coaching individuel</h3>
+          <p>
+            Un accompagnement <strong>100% personnalisé</strong> pour répondre à tes besoins spécifiques.
+            Que ce soit en présentiel (vallée de l'Hérault) ou en ligne, je t'aide à :
+          </p>
+          <ul>
+            <li>Définir tes objectifs (Ultra, course en montagne, etc.)</li>
+            <li>Créer un plan d'entraînement sur-mesure (renforcement, endurance, récupération)</li>
+            <li>Améliorer ta technique de course et ta gestion de l'effort</li>
+            <li>Préparer mentalement tes défis</li>
+          </ul>
+          <p><strong>Tarif :</strong> Sur devis </p>
+        </div>
+
+        <!-- Carte : Ateliers collectifs -->
+        <div class="service-card">
+          <h3>👥 Ateliers collectifs</h3>
+          <p>
+            Rejoins des <strong>séances en petit groupe</strong> pour progresser ensemble.
+            Idéal pour partager des conseils, s'entrainer en communauté et se motiver.
+          </p>
+          <ul>
+            <li>Séances de renforcement musculaire</li>
+            <li>Sorties trail encadrées</li>
+            <li>Ateliers techniques (dénivelé, descentes, gestion de l'effort)</li>
+          </ul>
+          <p><strong>Tarif :</strong> 25€/séance (abonnements possibles)</p>
+        </div>
+
+        <!-- Carte : Programme en ligne -->
+        <div class="service-card">
+          <h3>💻 Programme en ligne</h3>
+          <p>
+            Un <strong>programme complet à suivre à ton rythme</strong>, avec :
+          </p>
+          <ul>
+            <li>Vidéos d'exercices et tutoriels</li>
+            <li>Plans d'entraînement hebdomadaires</li>
+            <li>Suivi et ajustements personnalisés</li>
+            <li>Accès à une communauté de traileur·euses</li>
+          </ul>
+          <p><strong>Tarif :</strong> À partir de 80€/mois</p>
         </div>
       </div>
-    </div>
+    </section>
+
+    <hr />
+
+    <!-- Section : Témoignages -->
+    <section class="section" id="testimonials">
+      <h2>Ils·Elles me font confiance</h2>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Grâce à David, j'ai <strong>amélioré ma résilience musculaire</strong> et j'ai progressé sur mon 100km !"
+          </p>
+          <p class="testimonial-author">- Jean, traileur depuis toujours</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Les conseils techniques et la préparation mentale m'ont permis de <strong>courir sereinement et sans blessure</strong> sur une course de 20 km."
+          </p>
+          <p class="testimonial-author">- Marielle, débutante en trail</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Préparation réussie pour son 60km et son premier ultra trail après une blessure à la cheville
+          </p>
+          <p class="testimonial-author">- Charles, 34 ans, traileur passionné</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Section : Secteur géographique -->
+    <section class="section" id="zones">
+      <h2>Où je t'accompagne ?</h2>
+      <p>
+        <strong>En présentiel</strong> : Je me déplace dans toute la <strong>vallée de l'Hérault</strong> (Clermont l'Hérault, Gignac, Lodève, Pézenas, Ceyras, Canet, etc.).
+      </p>
+      <p>
+        <strong>En ligne</strong> : Où que tu sois, je peux te coacher à distance grâce à des séances en visio et un suivi personnalisé.
+      </p>
+      <div class="map-placeholder">
+        <!-- Ici, tu peux intégrer une carte interactive si tu le souhaites -->
+        <p>📍 <strong>Interventions principales</strong> : Clermont l'Hérault, Gignac, Lodève, Pézenas, Ceyras, Canet.</p>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Section : Découvre TrailTheLimit -->
+    <section class="section" id="ttl">
+      <h2>Découvre TrailTheLimit - Le checkup Ultra trail</h2>
+      <p>
+        Pour aller plus loin, explore mon site dédié à l'utra trail : <strong>des ressources, des articles et des outils</strong> pour progresser.
+      </p>
+      <div class="contact-links">
+        <a href="https://trailthelimit.fr" class="contact-link" target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">🌐 Site web</span>
+          <span>trailthelimit.fr</span>
+        </a>
+        <a href="https://www.instagram.com/trailthelimit/" class="contact-link" target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">📷 Instagram</span>
+          <span>@trailthelimit</span>
+        </a>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Section : FAQ -->
+    <section class="section" id="faq">
+      <h2>❓ Questions fréquentes</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>🔹 Combien de temps dure une séance de coaching ?</h3>
+          <p>Les séances durent généralement <strong>1h à 1h30</strong>, selon tes besoins et tes objectifs.</p>
+        </div>
+        <div class="faq-item">
+          <h3>🔹 Faut-il être déjà un·e traileur·euse confirmé·e pour commencer ?</h3>
+          <p>Non ! Mon accompagnement s'adresse <strong>à tous les niveaux</strong>, du·de la débutant·e au·à l'athlète confirmé·e.</p>
+        </div>
+        <div class="faq-item">
+          <h3>🔹 Quel matériel est nécessaire ?</h3>
+          <p>Pour les séances en présentiel, prévois <strong>une tenue de sport, de bonnes chaussures de trail et une gourde</strong>. Pour les séances en ligne, une connexion internet et un espace pour t'entraîner suffisent.</p>
+        </div>
+        <div class="faq-item">
+          <h3>🔹 Proposes-tu des séances d'essai ?</h3>
+          <p>Oui ! Je propose une <strong>séance découverte gratuite</strong> pour faire connaissance et discuter de tes objectifs.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- CTA final -->
+    <section class="section" id="contact-cta">
+      <div class="cta-container">
+        <h2>Prêt·e à te lancer ?</h2>
+        <p>
+          <strong>Ne laisse pas tes objectifs de trail de côté.</strong> Que ce soit pour une séance ponctuelle, un accompagnement sur le long terme ou un programme en ligne, je suis là pour t'aider à progresser.
+        </p>
+        <div class="cta-buttons">
+          <a href="mailto:contact@flaugere.fr?subject=Demande%20de%20coaching%20trail" class="cta-button primary">
+            <span>📩 Contacte-moi par email</span>
+          </a>
+          <a href="https://www.instagram.com/david_flgr/ " class="cta-button secondary">
+            <span>DM sur mon Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61593661581839" class="cta-button secondary">
+            <span>DM sur mon Facebook</span>
+          </a>
+        </div>
+        <p class="cta-note">
+          *Réponse sous 24h en semaine. Séance découverte offerte pour les nouveaux·elles client·es.*
+        </p>
+      </div>
+    </section>
   </div>
 </Layout>
 
+
 <style>
-  .contact-page {
-    max-width: 800px;
+  .coaching-page {
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 calc(var(--grid-unit) * 2);
   }
 
+  /* Header */
   .page-header {
     text-align: center;
     margin-bottom: calc(var(--grid-unit) * 8);
@@ -69,7 +259,7 @@ import Layout from '../components/Layout.astro';
     line-height: 1.6;
     color: var(--color-text-secondary);
     margin-bottom: calc(var(--grid-unit) * 4);
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -82,22 +272,208 @@ import Layout from '../components/Layout.astro';
     margin: 0 auto;
   }
 
-  .contact-content {
-    line-height: 1.7;
+  /* Sections */
+  .section {
+    margin-bottom: calc(var(--grid-unit) * 8);
   }
 
-  .contact-info h2 {
+  .section h2 {
     font-family: var(--font-heading-secondary);
     font-weight: 700;
     color: var(--color-text-primary);
     margin-bottom: calc(var(--grid-unit) * 3);
+    text-align: center;
+    font-size: 2rem;
   }
 
+  .section p {
+    line-height: 1.7;
+    margin-bottom: calc(var(--grid-unit) * 2);
+    color: var(--color-text-secondary);
+  }
+
+  /* Benefits list */
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--grid-unit) * 3);
+    margin-top: calc(var(--grid-unit) * 4);
+  }
+
+  .benefits-list li {
+    padding: calc(var(--grid-unit) * 2);
+    background-color: var(--color-surface);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 0 calc(var(--grid-unit) * 1) calc(var(--grid-unit) * 1) 0;
+  }
+
+  /* Service cards */
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--grid-unit) * 4);
+    margin-top: calc(var(--grid-unit) * 4);
+  }
+
+  .service-card {
+    background-color: var(--color-surface);
+    padding: calc(var(--grid-unit) * 3);
+    border-radius: calc(var(--grid-unit) * 1);
+    border: 1px solid var(--color-border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-card h3 {
+    color: var(--color-accent);
+    margin-bottom: calc(var(--grid-unit) * 2);
+    font-size: 1.5rem;
+  }
+
+  .service-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: calc(var(--grid-unit) * 2);
+  }
+
+  .service-card li {
+    padding-left: calc(var(--grid-unit) * 2);
+    margin-bottom: calc(var(--grid-unit) * 1);
+    position: relative;
+  }
+
+  .service-card li::before {
+    content: "✓";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+  }
+
+  /* Testimonials */
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--grid-unit) * 4);
+    margin-top: calc(var(--grid-unit) * 4);
+  }
+
+  .testimonial {
+    background-color: var(--color-surface);
+    padding: calc(var(--grid-unit) * 3);
+    border-radius: calc(var(--grid-unit) * 1);
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .testimonial-text {
+    font-style: italic;
+    margin-bottom: calc(var(--grid-unit) * 2);
+    color: var(--color-text-primary);
+  }
+
+  .testimonial-author {
+    text-align: right;
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+
+  /* FAQ */
+  .faq-container {
+    margin-top: calc(var(--grid-unit) * 4);
+  }
+
+  .faq-item {
+    margin-bottom: calc(var(--grid-unit) * 3);
+    padding: calc(var(--grid-unit) * 2);
+    background-color: var(--color-surface);
+    border-radius: calc(var(--grid-unit) * 1);
+  }
+
+  .faq-item h3 {
+    color: var(--color-accent);
+    margin-bottom: calc(var(--grid-unit) * 1);
+    font-size: 1.25rem;
+  }
+
+  /* CTA */
+  .cta-button-container {
+    text-align: center;
+    margin: calc(var(--grid-unit) * 4) 0;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 4);
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: calc(var(--grid-unit) * 1);
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cta-button:hover {
+    background-color: var(--color-accent-dark);
+    transform: scale(1.05);
+  }
+
+  .cta-container {
+    text-align: center;
+    padding: calc(var(--grid-unit) * 4);
+    background-color: var(--color-surface);
+    border-radius: calc(var(--grid-unit) * 1);
+    border: 1px solid var(--color-border);
+  }
+
+  .cta-container h2 {
+    margin-bottom: calc(var(--grid-unit) * 2);
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 2);
+    margin-top: calc(var(--grid-unit) * 4);
+    align-items: center;
+  }
+
+  .cta-button.primary {
+    background-color: var(--color-accent);
+  }
+
+  .cta-button.secondary {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+  }
+
+  .cta-button.secondary:hover {
+    background-color: var(--color-accent);
+    color: white;
+  }
+
+  .cta-note {
+    margin-top: calc(var(--grid-unit) * 3);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  /* Contact links */
   .contact-links {
     display: flex;
     flex-direction: column;
     gap: calc(var(--grid-unit) * 2);
     margin-top: calc(var(--grid-unit) * 4);
+    align-items: center;
   }
 
   .contact-link {
@@ -107,10 +483,12 @@ import Layout from '../components/Layout.astro';
     padding: calc(var(--grid-unit) * 2);
     border: 2px solid var(--color-border);
     transition: all 0.2s ease;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
   }
 
-  .contact-link:hover,
-  .contact-link:focus {
+  .contact-link:hover {
     border-color: var(--color-accent);
     background-color: var(--color-surface);
   }
@@ -125,11 +503,20 @@ import Layout from '../components/Layout.astro';
     margin-bottom: calc(var(--grid-unit) / 2);
   }
 
-  .contact-link:hover .contact-label,
-  .contact-link:focus .contact-label {
+  .contact-link:hover .contact-label {
     color: var(--color-accent);
   }
 
+  /* Map placeholder */
+  .map-placeholder {
+    text-align: center;
+    margin-top: calc(var(--grid-unit) * 4);
+    padding: calc(var(--grid-unit) * 2);
+    background-color: var(--color-surface);
+    border-radius: calc(var(--grid-unit) * 1);
+  }
+
+  /* Responsive */
   @media (max-width: 768px) {
     .page-title {
       font-size: 2.5rem;
@@ -137,6 +524,24 @@ import Layout from '../components/Layout.astro';
 
     .page-description {
       font-size: 1.125rem;
+    }
+
+    .section h2 {
+      font-size: 1.75rem;
+    }
+
+    .service-cards,
+    .testimonials-container {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+    }
+
+    .cta-button {
+      width: 100%;
+      max-width: 300px;
     }
   }
 </style>

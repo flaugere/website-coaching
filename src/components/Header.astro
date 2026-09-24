@@ -134,8 +134,8 @@ const base = '';
 
   async function initSearch() {
     try {
-      const response = await fetch('/David FLAUGERE/search.json');
-      searchData = await response.json();
+      // const response = await fetch('./search.json');
+      // searchData = await response.json();
     } catch (error) {
       console.error('Failed to load search data:', error);
     }
@@ -243,7 +243,6 @@ const base = '';
     init();
   }
 </script>
-
 <style>
   .site-header {
     background-color: var(--color-white);

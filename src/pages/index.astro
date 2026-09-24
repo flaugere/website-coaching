@@ -7,24 +7,24 @@ const sortedPosts = recentPosts
   .slice(0, 3);
 ---
 
-<Layout title="Accueil" description="Accompagnements personnalisés, plans d'entrainement et conseils en nutrition." showSidebar={false}>
+<Layout title="Accueil" description="Accompagnements personnalisés, plans d'entraînement et conseils en nutrition." showSidebar={false}>
   <div class="landing-page">
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">Coach sportif</h1>
-        <p class="hero-subtitle">Fitness | Santé | Mieux-être</p>
+        <p class="hero-subtitle">Fitness | Santé | Préparation Trail</p>
         <p class="hero-description">
-          Accompagnements personnalisés, plans d'entrainement et conseils en nutrition.
+          Accompagnements personnalisés, plans d'entraînement et conseils en nutrition.
         </p>
         <hr class="hero-rule" />
         <div class="hero-actions">
           <a href="/contact" class="btn btn-primary">C'est parti !</a>
           <a href="#coaching" class="btn btn-secondary">Coaching</a>
+          <a href="/trail" class="btn btn-secondary">Préparation trail</a>
         </div>
       </div>
     </section>
-
 
     <!-- Features Section -->
     <section class="features" id="features">
@@ -34,33 +34,40 @@ const sortedPosts = recentPosts
           <div class="feature-card">
             <h3 class="feature-title">Corps sain</h3>
             <p class="feature-description">
-              Pour contrer les effets néfastes de notre mode de vie sédentaire, l'activité physique est centrale.
+              Pour contrer les effets néfastes de la sédentarité, l'activité physique est centrale.
             </p>
             <p class="feature-description">
-              Par semaine, l'OMS recommande 150 minutes d'activité modérée (75 en soutenue) + 2 séances de renforcement musculaire.
+              L'OMS recommande au moins 150 minutes d'activité modérée (ou 75 minutes d'activité soutenue) et 2 séances de renforcement musculaire par semaine.
             </p>
           </div>
           <div class="feature-card">
             <h3 class="feature-title">Esprit sain</h3>
-            <p class="feature-description">L'activité physique a un impact sur notre bien-être mental. Régulations hormonales, gestion du stress, dépassement de soi.... Elle est un outil vers un esprit calme et fonctionnel.</p>
+            <p class="feature-description">
+              L'exercice régulier régule les hormones, réduit le stress et renforce la résilience mentale. Un vrai pilier pour garder un esprit clair et serein.
+            </p>
           </div>
           <div class="feature-card">
             <h3 class="feature-title">Alimentation</h3>
-            <p class="feature-description">L'alimentation est le carburant de notre corps et esprit. C'est une composante indissociable de notre bien-être physique et mental.</p>
+            <p class="feature-description">
+              L'alimentation est le carburant de ton corps et de ton esprit. C'est une composante indissociable de ton bien-être physique et de tes performances.
+            </p>
           </div>
           <div class="feature-card">
             <h3 class="feature-title">Minimalisme</h3>
-            <p class="feature-description">Créons des habitudes, commençons progressivement avec peu et efficience. Chez toi, à la salle ou en extérieur.</p>
+            <p class="feature-description">
+              Ancrons des habitudes durables avec une approche progressive et efficiente. À la maison, en salle ou en extérieur.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Demo Section -->
+
+    <!-- Blog Section -->
     <section class="demo-section" id="demo">
       <div class="container">
         <h2 class="section-title">Blog</h2>
-        <p>
-          Un lieu pour te partager des idées, des expériences et des ressources sur la musculation, la nutrition, l'entrainement,....
+        <p class="demo-description">
+          Retrouve mes conseils, retours d'expérience et ressources sur le renforcement, la nutrition et la préparation physique.
         </p>
         {sortedPosts.length > 0 && (
           <div class="demo-posts">
@@ -95,45 +102,57 @@ const sortedPosts = recentPosts
         )}
         
         <div class="demo-actions">
-          <a href="/blog" class="btn btn-primary">Voir les autres articles</a>
+          <a href="/blog" class="btn btn-primary">Voir tous les articles</a>
         </div>
       </div>
     </section>
-    <!-- coaching Section -->
+
+    <!-- Coaching Section -->
     <section class="coaching" id="coaching">
       <div class="container">
-        <h2 class="section-title">Coaching fitness / musculation</h2>
+        <h2 class="section-title">Coaching fitness & trail</h2>
         <div class="install-steps">
           <div class="step">
             <h3 class="step-number">01</h3>
             <div class="step-content">
               <h4 class="step-title">La rencontre</h4>
-              <p class="step-description">Nous allons échanger pour parler de tes objectifs, de tes contraintes pour cadrer au mieux l'accompagment à apporter. Pour terminer, nous ferons un bilan santé. </p>
-              </pre>
+              <p class="step-description">Nous échangeons sur tes objectifs, ton rythme de vie et tes contraintes pour définir un cadre sur mesure, complété par un bilan de forme initial.</p>
             </div>
           </div>
           
           <div class="step">
             <h3 class="step-number">02</h3>
             <div class="step-content">
-              <h4 class="step-title">Démarrage</h4>
-              <p class="step-description">A partir de notre premier échange, je te proposerai une ou des formules pour ton coaching personnalisé : plan d'entrainement, accompagnement séance, conseils nutrition, bilans mi-parcours.
-                <br /> Cela pourra comprendre une séance d'essai si présentiel.
-              </p>
+              <h4 class="step-title">Le démarrage</h4>
+              <p class="step-description">À partir de notre échange, je te propose un suivi adapté : planification, séances guidées et conseils nutritionnels (avec séance d'essai possible en présentiel).</p>
             </div>
           </div>
           
           <div class="step">
             <h3 class="step-number">03</h3>
             <div class="step-content">
-              <h4 class="step-title">Accompagnements</h4>
-              <p class="step-description">Un suivi individualisé tout au long de ton coaching est mise en place. Par exemple, nous pourrons ajuster en fonction des contraintes personnelles, professionnels ou hormonales.</p>
+              <h4 class="step-title">L'accompagnement</h4>
+              <p class="step-description">Un suivi individuel continu nous permet d'ajuster la programmation selon tes contraintes personnelles, professionnelles ou ta fatigue du moment.</p>
             </div>
           </div>
-            <div class="hero-actions">
-              <a href="/contact" class="btn btn-primary">C'est parti !</a>  
-            </div>
+          <div class="coaching-actions">
+            <a href="/contact" class="btn btn-primary">C'est parti !</a>  
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Trail Coaching Section -->
+    <section class="trail-coaching" id="coaching-trail">
+      <div class="container trail-coaching-content">
+        <div>
+          <p class="trail-coaching-eyebrow">Coaching spécifique</p>
+          <h2 class="section-title">Renforcement trail</h2>
+          <p class="trail-coaching-description">
+            Prépare ton corps et ton mental pour les sentiers grâce à un renforcement ciblé et adapté à tes courses d'objectif.
+          </p>
+        </div>
+        <a href="/trail" class="btn btn-primary">Découvrir le coaching trail</a>
       </div>
     </section>
   </div>
@@ -152,12 +171,16 @@ const sortedPosts = recentPosts
 
   .hero {
     text-align: center;
-    padding: calc(var(--grid-unit) * 12) 0 calc(var(--grid-unit) * 8);
+    position: relative;
+    isolation: isolate;
+    padding: clamp(96px, 14vw, 168px) 0 clamp(72px, 10vw, 112px);
     background:
       url('/images/background_salle.jpg'),
       linear-gradient(135deg, var(--color-surface) 0%, var(--color-background) 100%);
     background-size: cover;
-    background-position: center;
+    background-position: center 42%;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid var(--color-border);
   }
 
   .hero-content {
@@ -168,12 +191,12 @@ const sortedPosts = recentPosts
 
   .hero-title {
     font-family: var(--font-heading-primary);
-    font-size: 4.5rem;
+    font-size: clamp(3.25rem, 8vw, 6rem);
     font-weight: 700;
     color: var(--color-accent);
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    line-height: 0.9;
+    letter-spacing: 0.1em;
+    line-height: 0.95;
     margin-bottom: calc(var(--grid-unit) * 2);
   }
 
@@ -198,10 +221,10 @@ const sortedPosts = recentPosts
   }
 
   .hero-rule {
-    height: 6px;
+    height: 3px;
     background-color: var(--color-accent);
     border: none;
-    width: 150px;
+    width: 96px;
     margin: 0 auto calc(var(--grid-unit) * 4);
   }
 
@@ -218,8 +241,8 @@ const sortedPosts = recentPosts
     text-transform: uppercase;
     letter-spacing: 0.05em;
     padding: calc(var(--grid-unit) * 1.5) calc(var(--grid-unit) * 3);
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    border-radius: 2px;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
     text-decoration: none;
     display: inline-block;
     font-size: 0.95rem;
@@ -252,43 +275,38 @@ const sortedPosts = recentPosts
   }
 
   .features {
-    padding: calc(var(--grid-unit) * 8) 0;
+    padding: clamp(64px, 9vw, 112px) 0;
   }
 
   .section-title {
     font-family: var(--font-heading-secondary);
-    font-size: 2.5rem;
+    font-size: clamp(1.9rem, 4vw, 2.75rem);
     font-weight: 900;
     color: var(--color-accent);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: calc(var(--grid-unit) * 6);
+    margin-bottom: calc(var(--grid-unit) * 5);
     text-align: center;
   }
 
   .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: calc(var(--grid-unit) * 4);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    background-color: var(--color-border);
+    border: 1px solid var(--color-border);
   }
 
   .feature-card {
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: calc(var(--grid-unit) * 4);
-    text-align: center;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    background-color: var(--color-background);
+    padding: clamp(24px, 4vw, 40px);
+    border: 0;
+    text-align: left;
+    transition: background-color 0.2s ease;
   }
 
   .feature-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--color-accent);
-  }
-
-  .feature-icon {
-    font-size: 3rem;
-    margin-bottom: calc(var(--grid-unit) * 2);
+    background-color: #fff8ed;
   }
 
   .feature-title {
@@ -299,98 +317,32 @@ const sortedPosts = recentPosts
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: calc(var(--grid-unit) * 1.5);
+    display: flex;
+    align-items: center;
+    gap: var(--grid-unit);
+  }
+
+  .feature-title::before {
+    content: '';
+    width: 24px;
+    height: 3px;
+    flex: 0 0 auto;
+    background-color: var(--color-accent);
   }
 
   .feature-description {
     color: var(--color-text-secondary);
     line-height: 1.6;
-    margin: 0;
+    margin: 0 0 calc(var(--grid-unit) * 1.5) 0;
   }
 
-  /* Typography Showcase */
-  .typography-showcase {
-    padding: calc(var(--grid-unit) * 8) 0;
-    background-color: var(--color-surface);
-  }
-
-  .typography-description {
-    text-align: center;
-    font-size: 1.125rem;
-    color: var(--color-text-secondary);
-    margin-bottom: calc(var(--grid-unit) * 6);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .typography-samples {
-    display: grid;
-    gap: calc(var(--grid-unit) * 6);
-  }
-
-  .type-sample {
-    text-align: center;
-    padding: calc(var(--grid-unit) * 4);
-    background-color: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-  }
-
-  .sample-h1 {
-    font-family: var(--font-heading-primary);
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    line-height: 1.1;
-    margin-bottom: calc(var(--grid-unit) * 2);
-  }
-
-  .sample-h2 {
-    font-family: var(--font-heading-secondary);
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    line-height: 1.2;
-    margin-bottom: calc(var(--grid-unit) * 2);
-  }
-
-  .sample-body {
-    font-family: var(--font-body);
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: var(--color-text-primary);
-    margin-bottom: calc(var(--grid-unit) * 2);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .sample-code {
-    font-family: var(--font-mono);
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    padding: calc(var(--grid-unit)) calc(var(--grid-unit) * 1.5);
-    border-radius: 4px;
-    display: inline-block;
-    margin-bottom: calc(var(--grid-unit) * 2);
-    color: var(--color-text-primary);
-  }
-
-  .type-meta {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin: 0;
+  .feature-description:last-child {
+    margin-bottom: 0;
   }
 
   .demo-section {
-    padding: calc(var(--grid-unit) * 8) 0;
+    padding: clamp(64px, 9vw, 112px) 0;
+    border-top: 1px solid var(--color-border);
   }
 
   .demo-description {
@@ -406,15 +358,17 @@ const sortedPosts = recentPosts
 
   .demo-posts {
     display: grid;
-    gap: calc(var(--grid-unit) * 4);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: calc(var(--grid-unit) * 2);
     margin-bottom: calc(var(--grid-unit) * 6);
   }
 
   .demo-post-card {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: calc(var(--grid-unit) * 3);
+    border-top: 3px solid var(--color-accent);
+    border-radius: 2px;
+    padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 2.5);
     transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
@@ -478,13 +432,63 @@ const sortedPosts = recentPosts
   }
 
   .coaching {
-    padding: calc(var(--grid-unit) * 8) 0;
+    padding: clamp(64px, 9vw, 112px) 0;
+    background-color: var(--color-text-primary);
+    color: var(--color-background);
+  }
+
+  .coaching .step-description {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .coaching .step-title {
+    color: var(--color-background);
+  }
+
+  .coaching-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(var(--grid-unit) * 4);
+  }
+
+  .trail-coaching {
+    padding: clamp(48px, 7vw, 80px) 0;
+    border-top: 1px solid var(--color-border);
     background-color: var(--color-surface);
   }
 
-  .install-steps {
-    display: grid;
+  .trail-coaching-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: calc(var(--grid-unit) * 4);
+  }
+
+  .trail-coaching .section-title {
+    margin-bottom: calc(var(--grid-unit) * 1.5);
+    text-align: left;
+  }
+
+  .trail-coaching-eyebrow {
+    margin-bottom: var(--grid-unit);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .trail-coaching-description {
+    max-width: 620px;
+    margin-bottom: 0;
+    color: var(--color-text-secondary);
+  }
+
+  .install-steps {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0;
   }
 
   .step {
@@ -492,6 +496,12 @@ const sortedPosts = recentPosts
     grid-template-columns: auto 1fr;
     gap: calc(var(--grid-unit) * 2);
     align-items: start;
+    padding: calc(var(--grid-unit) * 3) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .step:nth-of-type(3) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .step-number {
@@ -511,26 +521,14 @@ const sortedPosts = recentPosts
     font-family: var(--font-heading-secondary);
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--color-text-primary);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: calc(var(--grid-unit));
   }
 
-  .code-block {
-    background-color: var(--color-text-primary);
-    color: var(--color-background);
-    padding: calc(var(--grid-unit) * 2);
-    border-radius: 8px;
-    overflow-x: auto;
-    margin: 0;
-  }
-
-  .code-block code {
-    font-family: var(--font-mono);
-    background: none;
-    border: none;
-    color: inherit;
+  .step-description {
+    margin-bottom: 0;
+    line-height: 1.6;
   }
 
   @media (max-width: 768px) {
@@ -553,6 +551,15 @@ const sortedPosts = recentPosts
 
     .features-grid {
       grid-template-columns: 1fr;
+    }
+
+    .demo-posts {
+      grid-template-columns: 1fr;
+    }
+
+    .trail-coaching-content {
+      align-items: flex-start;
+      flex-direction: column;
     }
 
     .step {
