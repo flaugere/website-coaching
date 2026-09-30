@@ -27,9 +27,21 @@ export interface Props {
   type?: 'website' | 'article';
   publishedTime?: string;
   canonical?: string;
+  titleIsComplete?: boolean;
+  structuredData?: Record<string, unknown>;
 }
 
-const { title, description, showSidebar = true, image, type, publishedTime, canonical } = Astro.props;
+const {
+  title,
+  description,
+  showSidebar = true,
+  image,
+  type,
+  publishedTime,
+  canonical,
+  titleIsComplete,
+  structuredData,
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -45,6 +57,8 @@ const { title, description, showSidebar = true, image, type, publishedTime, cano
       type={type}
       publishedTime={publishedTime}
       canonical={canonical}
+      titleIsComplete={titleIsComplete}
+      structuredData={structuredData}
     />
     
     <!-- Google tag (gtag.js) -->

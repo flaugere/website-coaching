@@ -10,6 +10,7 @@ export interface SiteConfig {
     github?: string;
     twitter?: string;
     instagram?: string;
+    facebook?: string;
     linkedin?: string;
     email?: string;
   };
@@ -25,6 +26,8 @@ export const config: SiteConfig = {
     avatar: "/images/avatar.jpg" // Uncomment and add your avatar image to public/images/
   },
   social: {
+    instagram: "https://www.instagram.com/david_flgr/",
+    facebook: "https://www.facebook.com/profile.php?id=61593661581839",
     //github: "https://github.com/flaugere",
     //linkedin: "https://linkedin.com/in/yourusername",
     email: "contact@flaugere.fr"

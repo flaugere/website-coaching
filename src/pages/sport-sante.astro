@@ -1,0 +1,393 @@
+---
+import Layout from '../components/Layout.astro';
+
+const localBusiness = {
+	'@context': 'https://schema.org',
+	'@type': 'LocalBusiness',
+	'@id': 'https://flaugere.fr/#localbusiness',
+	name: 'David FLAUGERE',
+	url: 'https://flaugere.fr/',
+	description: 'Coaching sport santé dans la vallée de l’Hérault.',
+	email: 'contact@flaugere.fr',
+	areaServed: [
+		{ '@type': 'AdministrativeArea', name: 'Vallée de l’Hérault' },
+		{ '@type': 'City', name: "Clermont-l'Hérault" },
+		{ '@type': 'City', name: 'Gignac' },
+		{ '@type': 'City', name: 'Lodève' },
+		{ '@type': 'City', name: 'Pézenas' },
+	],
+	sameAs: [
+		'https://www.instagram.com/david_flgr/',
+		'https://www.facebook.com/profile.php?id=61593661581839',
+	],
+};
+---
+
+<Layout
+	title="Coach sport santé vallée de l'Hérault | David Flaugère"
+	titleIsComplete={true}
+	description="Coaching sport santé à Clermont-l'Hérault, Gignac, Lodève et Pézenas. Séances adaptées à ton rythme, à domicile ou en petit groupe, dans la vallée de l'Hérault."
+	structuredData={localBusiness}
+>
+	<div class="sport-sante-page">
+		<header class="page-header">
+			<h1 class="page-title">Sport santé dans la vallée de l'Hérault</h1>
+			<p class="page-description">
+				Bouger à ton rythme, dans un cadre bienveillant,
+				sans jugement et sans pression de performance.
+			</p>
+			<div class="cta-button-container">
+				<a
+					class="cta-button primary"
+					href="https://calendar.app.google/3FxPgosyfocwCVK49"
+					target="_blank"
+					rel="noopener noreferrer"
+				>Je réserve une séance découverte</a>
+			</div>
+			<hr class="page-rule" />
+		</header>
+
+		<section class="section" id="bienfaits">
+			<h2>C'est quoi, le sport santé ?</h2>
+			<p>
+				Pas besoin d'être sportif·ve, de savoir courir 10 km ou de soulever lourd.
+				Le sport santé, c'est utiliser le mouvement pour se sentir mieux : dans son
+				corps, dans sa tête et dans son quotidien.
+			</p>
+			<ul class="benefits-list">
+				<li><strong>Retrouver de l'énergie</strong> et mieux dormir.</li>
+				<li><strong>Renforcer ton corps</strong> pour être plus à l'aise au quotidien.</li>
+				<li><strong>Reprendre confiance</strong> en toi et en ce que ton corps sait faire.</li>
+				<li><strong>Te faire du bien à la tête</strong> : le mouvement aide à déstresser.</li>
+				<li><strong>Progresser à ton rythme</strong>, avec des objectifs qui te ressemblent.</li>
+			</ul>
+		</section>
+
+		<hr />
+
+		<section class="section" id="public">
+			<h2>Pour qui ?</h2>
+			<p>Pour toi, tout simplement, que tu sois :</p>
+			<ul class="audience-list">
+				<li>Débutant·e ou en reprise après une longue pause</li>
+				<li>Sédentaire et avec envie de bouger progressivement</li>
+				<li>En reprise après une blessure ou une période difficile, en accord avec ton médecin ou ton kiné</li>
+				<li>Actif·ve et avec envie de te renforcer pour tenir dans la durée</li>
+				<li>Jeune, moins jeune, sportif·ve ou pas du tout</li>
+			</ul>
+			<p class="section-note">
+				Ici, pas de niveau requis ni de comparaison. Tous les corps sont les bienvenus,
+				et chaque séance s'adapte à toi.
+			</p>
+		</section>
+
+		<hr />
+
+		<section class="section" id="accompagnement">
+			<h2>Comment ça se passe ?</h2>
+			<div class="steps-grid">
+				<article class="step-card">
+					<span class="step-number">01</span>
+					<h3>On fait connaissance</h3>
+					<p>Un premier échange pour comprendre où tu en es, ce que tu aimerais et ce qui te freine. Zéro pression.</p>
+				</article>
+				<article class="step-card">
+					<span class="step-number">02</span>
+					<h3>On construit ton programme</h3>
+					<p>Des séances adaptées à ton niveau, ton emploi du temps et tes envies. Le programme peut évoluer en route.</p>
+				</article>
+				<article class="step-card">
+					<span class="step-number">03</span>
+					<h3>Tu bouges, on ajuste</h3>
+					<p>Je t'accompagne avec bienveillance et on célèbre chaque progrès, même les petits.</p>
+				</article>
+			</div>
+		</section>
+
+		<hr />
+
+		<section class="section" id="formats">
+			<h2>Les formats</h2>
+			<div class="service-cards">
+				<article class="service-card">
+					<h3>En petit groupe</h3>
+					<p>Un espace convivial pour bouger ensemble, dans une ambiance détendue.</p>
+				</article>
+				<article class="service-card">
+					<h3>En individuel</h3>
+					<p>Un accompagnement sur mesure, construit autour de tes besoins et de tes objectifs.</p>
+				</article>
+				<article class="service-card">
+					<h3>À distance</h3>
+					<p>Un accompagnement où que tu sois, avec un format défini ensemble selon tes besoins.</p>
+				</article>
+			</div>
+		</section>
+
+		<hr />
+
+		<section class="section" id="zone-intervention">
+			<h2>Où pratiquer le sport santé ?</h2>
+			<p>
+				J'accompagne les personnes de la vallée de l'Hérault, notamment à
+				<strong>Clermont-l'Hérault, Gignac, Lodève et Pézenas</strong>. Les séances
+				peuvent se dérouler à domicile, en présentiel ou en petit groupe.
+			</p>
+			<p>
+				Tu habites dans une commune voisine ?
+				<a href="/contact#zones">Contacte-moi pour vérifier la zone d'intervention.</a>
+			</p>
+		</section>
+
+		<hr />
+
+		<section class="section about-section" id="apropos">
+			<h2>Pourquoi venir chez moi ?</h2>
+			<p>
+				Je suis David, coach sportif et instructeur fitness, spécialisé en renforcement
+				musculaire. J'ai une approche globale de la santé : je ne m'intéresse pas qu'à
+				tes muscles, mais à toi dans ton ensemble, de ton énergie à ton sommeil, en
+				passant par le stress et le quotidien.
+			</p>
+			<p><strong>Mon idée : un sport qui t'aide à vivre mieux, pas un sport qui te met la pression.</strong></p>
+		</section>
+
+		<hr />
+
+		<section class="section" id="faq">
+			<h2>Questions fréquentes</h2>
+			<div class="faq-container">
+				<details class="faq-item">
+					<summary>Je n'ai pas fait de sport depuis des années, c'est possible ?</summary>
+					<p>Oui. On commence doucement et on avance à ton rythme.</p>
+				</details>
+				<details class="faq-item">
+					<summary>J'ai des douleurs ou un souci de santé, je peux venir ?</summary>
+					<p>
+						On en parle ensemble lors du premier échange. Si besoin, la reprise se fait
+						avec l'accord de ton médecin ou de ton kiné. Le sport santé ne remplace
+						jamais un suivi médical, il le complète.
+					</p>
+				</details>
+				<details class="faq-item">
+					<summary>Je suis mal à l'aise en salle ou dans un groupe.</summary>
+					<p>Tu peux commencer en individuel, dans une ambiance bienveillante et sans comparaison.</p>
+				</details>
+				<details class="faq-item">
+					<summary>Il faut un équipement particulier ?</summary>
+					<p>Une tenue confortable et une bouteille d'eau suffisent. Le reste, on s'en occupe.</p>
+				</details>
+			</div>
+		</section>
+
+		<hr />
+
+		<section class="section" id="contact-cta">
+			<div class="cta-container">
+				<h2>Prêt·e à bouger, à ta façon ?</h2>
+				<p>Réserve ta séance découverte : on en discute sans engagement.</p>
+				<div class="cta-buttons">
+					<a
+						href="https://calendar.app.google/3FxPgosyfocwCVK49"
+						class="cta-button primary"
+						target="_blank"
+						rel="noopener noreferrer"
+					>Je me lance</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.sport-sante-page {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 calc(var(--grid-unit) * 2);
+	}
+
+	.page-header {
+		margin-bottom: calc(var(--grid-unit) * 8);
+		text-align: center;
+	}
+
+	.page-title {
+		margin-bottom: calc(var(--grid-unit) * 3);
+		color: var(--color-accent);
+		font-family: var(--font-heading-primary);
+		font-size: 3.5rem;
+		font-weight: 900;
+		line-height: 1.1;
+		text-transform: uppercase;
+	}
+
+	.page-description {
+		max-width: 800px;
+		margin: 0 auto calc(var(--grid-unit) * 4);
+		color: var(--color-text-secondary);
+		font-size: 1.25rem;
+		line-height: 1.6;
+	}
+
+	.page-rule {
+		width: 120px;
+		height: 4px;
+		margin: 0 auto;
+		border: 0;
+		background: var(--color-accent);
+	}
+
+	.cta-button-container {
+		margin: calc(var(--grid-unit) * 4) 0;
+	}
+
+	.cta-button {
+		display: inline-block;
+		padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 4);
+		border: 2px solid var(--color-accent);
+		background: var(--color-accent);
+		color: var(--color-white);
+		font-size: 1.125rem;
+		font-weight: 700;
+		text-decoration: none;
+		transition: background-color 0.2s ease, color 0.2s ease;
+	}
+
+	.cta-button:hover,
+	.cta-button:focus-visible {
+		background: transparent;
+		color: var(--color-accent);
+	}
+
+	.section {
+		margin-bottom: calc(var(--grid-unit) * 8);
+	}
+
+	.section h2 {
+		margin-bottom: calc(var(--grid-unit) * 3);
+		color: var(--color-text-primary);
+		font-family: var(--font-heading-secondary);
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.section p {
+		margin-bottom: calc(var(--grid-unit) * 2);
+		color: var(--color-text-secondary);
+		line-height: 1.7;
+	}
+
+	.benefits-list,
+	.audience-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+		gap: calc(var(--grid-unit) * 2);
+		margin: calc(var(--grid-unit) * 4) 0 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.benefits-list li,
+	.audience-list li {
+		padding: calc(var(--grid-unit) * 2);
+		border-left: 4px solid var(--color-accent);
+		background: var(--color-surface);
+		color: var(--color-text-secondary);
+	}
+
+	.benefits-list strong {
+		color: var(--color-text-primary);
+	}
+
+	.section-note {
+		margin-top: calc(var(--grid-unit) * 3);
+		text-align: center;
+	}
+
+	.steps-grid,
+	.service-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+		gap: calc(var(--grid-unit) * 3);
+		margin-top: calc(var(--grid-unit) * 4);
+	}
+
+	.step-card,
+	.service-card {
+		padding: calc(var(--grid-unit) * 3);
+		border: 1px solid var(--color-border);
+		background: var(--color-surface);
+	}
+
+	.step-number {
+		display: block;
+		margin-bottom: calc(var(--grid-unit) * 2);
+		color: var(--color-accent);
+		font-family: var(--font-heading-primary);
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	.step-card h3,
+	.service-card h3 {
+		color: var(--color-accent);
+		font-size: 1.25rem;
+	}
+
+	.step-card p,
+	.service-card p {
+		margin-bottom: 0;
+	}
+
+	.about-section {
+		max-width: 760px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.faq-container {
+		margin-top: calc(var(--grid-unit) * 4);
+	}
+
+	.faq-item {
+		padding: calc(var(--grid-unit) * 2);
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.faq-item summary {
+		color: var(--color-accent);
+		cursor: pointer;
+		font-family: var(--font-heading-secondary);
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	.faq-item p {
+		margin: calc(var(--grid-unit) * 2) 0 0;
+	}
+
+	.cta-container {
+		padding: calc(var(--grid-unit) * 4);
+		border: 1px solid var(--color-border);
+		background: var(--color-surface);
+		text-align: center;
+	}
+
+	.cta-buttons {
+		margin-top: calc(var(--grid-unit) * 3);
+	}
+
+	@media (max-width: 768px) {
+		.page-title {
+			font-size: 2.5rem;
+		}
+
+		.page-description {
+			font-size: 1.125rem;
+		}
+
+		.section h2 {
+			font-size: 1.75rem;
+		}
+	}
+</style>
