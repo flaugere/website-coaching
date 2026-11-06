@@ -1,0 +1,270 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout
+	title="Le studio de coaching | David Flaugère"
+	titleIsComplete={true}
+	description="Découvre mon studio de coaching, un espace privatif dédié au renforcement musculaire, à la préparation trail et au sport santé."
+>
+	<div class="studio-page">
+		<header class="page-header">
+			<p class="eyebrow">Un espace pour bouger à ton rythme</p>
+			<h1 class="page-title">Le studio</h1>
+			<hr class="page-rule" />
+		</header>
+
+		<section class="studio-intro" aria-labelledby="studio-intro-title">
+			<div class="studio-copy">
+				<h2 id="studio-intro-title">Un lieu à part, rien que pour ton accompagnement</h2>
+				<p>
+					Je te reçois dans mon studio de coaching, un espace privatif dédié au
+					mouvement et à la progression. Ici, pas de salle bondée ni de regard
+					extérieur : on prend le temps de faire le point, de s'entraîner et
+					 d'avancer à ton rythme.
+				</p>
+				<p>
+					La séance se construit autour de toi, de tes objectifs et de ton quotidien.
+					Que tu souhaites gagner en force, préparer un trail ou reprendre une activité
+					physique, le studio offre un cadre calme et adapté pour t'accompagner.
+				</p>
+				<a
+					class="cta-button primary"
+					href="https://calendar.app.google/3FxPgosyfocwCVK49"
+					target="_blank"
+					rel="noopener noreferrer"
+				>Réserver un premier échange</a>
+			</div>
+			<img
+				class="studio-image"
+				src="/images/studio-coaching.jpg"
+				alt="Vue du studio de coaching, un espace privatif aménagé pour s'entraîner"
+				loading="eager"
+			/>
+		</section>
+
+		<section class="section" aria-labelledby="studio-activities-title">
+			<h2 id="studio-activities-title">Trois façons de t'accompagner</h2>
+			<div class="activity-grid">
+				<article class="activity-item">
+					<span class="activity-number">01</span>
+					<h3>Renforcement</h3>
+					<p>Construire une base solide, améliorer ta force et te sentir plus à l'aise dans tes mouvements.</p>
+				</article>
+				<article class="activity-item">
+					<span class="activity-number">02</span>
+					<h3>Préparation trail</h3>
+					<p>Développer les qualités physiques utiles sur les sentiers et préparer tes objectifs avec méthode.</p>
+				</article>
+				<article class="activity-item">
+					<span class="activity-number">03</span>
+					<h3>Sport santé</h3>
+					<p>Reprendre ou entretenir une activité physique dans un cadre bienveillant, adapté à tes capacités.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="studio-cta" aria-labelledby="studio-cta-title">
+			<div>
+				<p class="eyebrow">On en parle ?</p>
+				<h2 id="studio-cta-title">Ton accompagnement commence par un échange</h2>
+				<p>Dis-moi ce que tu recherches et nous verrons ensemble comment le studio peut répondre à tes besoins.</p>
+			</div>
+			<a
+				class="cta-button secondary"
+				href="https://calendar.app.google/3FxPgosyfocwCVK49"
+				target="_blank"
+				rel="noopener noreferrer"
+			>Réserver un bilan</a>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.studio-page {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 calc(var(--grid-unit) * 2);
+	}
+
+	.page-header {
+		margin-bottom: calc(var(--grid-unit) * 8);
+		text-align: center;
+	}
+
+	.eyebrow {
+		margin: 0 0 calc(var(--grid-unit) * 2);
+		color: var(--color-text-secondary);
+		font-family: var(--font-heading-secondary);
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.page-title {
+		margin: 0 0 calc(var(--grid-unit) * 3);
+		color: var(--color-accent);
+		font-family: var(--font-heading-primary);
+		font-size: 3.5rem;
+		font-weight: 900;
+		line-height: 1.1;
+		text-transform: uppercase;
+	}
+
+	.page-rule {
+		width: 120px;
+		height: 4px;
+		margin: 0 auto;
+		border: 0;
+		background: var(--color-accent);
+	}
+
+	.studio-intro {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+		gap: calc(var(--grid-unit) * 6);
+		align-items: center;
+		margin-bottom: calc(var(--grid-unit) * 10);
+	}
+
+	.studio-copy h2,
+	.studio-cta h2 {
+		margin: 0 0 calc(var(--grid-unit) * 3);
+		color: var(--color-text-primary);
+		font-family: var(--font-heading-secondary);
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+
+	.studio-copy p,
+	.studio-cta p {
+		margin: 0 0 calc(var(--grid-unit) * 3);
+		color: var(--color-text-secondary);
+		line-height: 1.7;
+	}
+
+	.studio-image {
+		display: block;
+		width: 100%;
+		height: 400px;
+		border-radius: 2px;
+		object-fit: cover;
+		object-position: 70% center;
+	}
+
+	.cta-button {
+		display: inline-block;
+		padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 4);
+		border: 2px solid var(--color-accent);
+		background: var(--color-accent);
+		color: var(--color-white);
+		font-size: 1rem;
+		font-weight: 700;
+		text-align: center;
+		text-decoration: none;
+		transition: background-color 0.2s ease, color 0.2s ease;
+	}
+
+	.cta-button:hover,
+	.cta-button:focus-visible {
+		background: transparent;
+		color: var(--color-accent);
+	}
+
+	.section {
+		margin-bottom: calc(var(--grid-unit) * 10);
+	}
+
+	.section > h2 {
+		margin: 0 0 calc(var(--grid-unit) * 4);
+		color: var(--color-text-primary);
+		font-family: var(--font-heading-secondary);
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.activity-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: calc(var(--grid-unit) * 3);
+	}
+
+	.activity-item {
+		padding: calc(var(--grid-unit) * 3);
+		border-top: 3px solid var(--color-accent);
+		background: var(--color-surface);
+	}
+
+	.activity-number {
+		color: var(--color-accent);
+		font-family: var(--font-heading-primary);
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	.activity-item h3 {
+		margin: calc(var(--grid-unit) * 2) 0;
+		color: var(--color-text-primary);
+		font-family: var(--font-heading-secondary);
+		font-size: 1.35rem;
+	}
+
+	.activity-item p {
+		margin: 0;
+		color: var(--color-text-secondary);
+		line-height: 1.6;
+	}
+
+	.studio-cta {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: calc(var(--grid-unit) * 4);
+		padding: calc(var(--grid-unit) * 5);
+		border: 1px solid var(--color-border);
+		background: var(--color-surface);
+	}
+
+	.studio-cta h2 {
+		font-size: 1.75rem;
+	}
+
+	.studio-cta p:last-child {
+		margin-bottom: 0;
+	}
+
+	.cta-button.secondary {
+		flex: 0 0 auto;
+		background: transparent;
+		color: var(--color-accent);
+	}
+
+	.cta-button.secondary:hover,
+	.cta-button.secondary:focus-visible {
+		background: var(--color-accent);
+		color: var(--color-white);
+	}
+
+	@media (max-width: 768px) {
+		.page-title {
+			font-size: 2.5rem;
+		}
+
+		.studio-intro {
+			grid-template-columns: 1fr;
+		}
+
+		.studio-image {
+			height: 320px;
+		}
+
+		.activity-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.studio-cta {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+	}
+</style>
