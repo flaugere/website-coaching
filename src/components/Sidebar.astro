@@ -223,4 +223,10 @@ const categories = [...new Set(allPosts.flatMap(post => post.frontmatter.categor
       margin-bottom: calc(var(--grid-unit) * 3);
     }
   }
+
+  @media (max-width: 768px) {
+    .categories {
+      display: none;
+    }
+  }
 </style>
